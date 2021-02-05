@@ -1,9 +1,10 @@
 'use strict'
 
-const mongoose = require('mongoose')
-const readLine = require('readline')
-const async = require('async')
-require('./lib/i18nSetup')
+const mongoose = require('mongoose');
+const readLine = require('readline');
+const async = require('async');
+require('dotenv').config(); // inicializamos variables de entrono desde el fichero .env
+require('./lib/i18nSetup');
 
 const db = require('./lib/connectMongoose')
 
